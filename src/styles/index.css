@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(58, 58, 58);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgb(58, 58, 58);
+  text-decoration: none;
+}
+
+h2 {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+
+p {
+  font-family: "Sen", sans-serif;
+  color: rgb(58, 58, 58);
+}
+
+button {
+  font-family: "Sen", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  border-left: 1px solid #e6ecf8;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #734b6d;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+@media screen and (max-width: 760px) {
+  h3 {
+    font-size: 1rem;
+  }
+}

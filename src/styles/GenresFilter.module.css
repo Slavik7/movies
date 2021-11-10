@@ -1,0 +1,36 @@
+.genres-filter-container {
+  padding-top: 1em;
+}
+
+.genres-filter-title {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #585858;
+}
+.checkbox-option {
+  padding-bottom: 1em;
+  font-family: "Sen", sans-serif;
+  font-size: 1rem;
+}
+
+.checkbox-option input {
+  width: 2rem;
+}
+.btn-filter {
+  background: #fff;
+  height: 1.7rem;
+  width: 100%;
+  border: 1px solid #734b6d;
+  margin-left: 0.3rem;
+  font-family: "Sen", sans-serif;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: #734b6d;
+  transition: all 0.2s ease;
+}
+
+.btn-filter:hover,
+.btn-filter:active {
+  background: #734b6d;
+  color: #fff;
+  cursor: pointer;
+}

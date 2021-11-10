@@ -1,0 +1,148 @@
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.205);
+}
+
+.logo a {
+  color: #734b6d;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+.nav-main {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-window {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  right: 0;
+  top: 4rem;
+  height: 100%;
+  width: 14rem;
+  background: #fff;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.205);
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.window-open {
+  transform: translateX(0);
+  opacity: 1;
+}
+.nav-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-option {
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+.nav-options a {
+  color: #734b6d;
+  transition: all 0.2s ease;
+}
+
+.nav-options a:hover {
+  font-size: 120%;
+}
+
+/* burger animation progress */
+
+.burger {
+  width: 48px;
+  height: 24px;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 8px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burger-line1,
+.burger-line2,
+.burger-line3 {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 90%;
+  background: #734b6d;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  transform-origin: left center;
+}
+.burger-line1 {
+  top: 1px;
+  transform-origin: left center;
+}
+.burger-line2 {
+  top: 12px;
+  transform-origin: left center;
+}
+.burger-line3 {
+  top: 24px;
+  transform-origin: left center;
+}
+.burger-line1.open {
+  transform: rotate(45deg);
+  top: 2px;
+  left: 8px;
+}
+
+.burger-line2.open {
+  width: 0%;
+  opacity: 0;
+}
+.burger-line3.open {
+  transform: rotate(-45deg);
+  top: 33px;
+  left: 8px;
+}
+
+@keyframes windowAnim {
+  from {
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    width: 100%;
+  }
+}

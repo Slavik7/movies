@@ -1,0 +1,52 @@
+.movies-slider-container {
+  max-width: 100%;
+  display: flex;
+  padding: 2rem 1rem;
+  margin: 0 2rem 2rem 2rem;
+  position: relative;
+  overflow-x: scroll;
+}
+
+.movie-card-container {
+  margin: 0 0.5rem;
+  min-width: 200px;
+}
+
+.movies-slider-container::-webkit-scrollbar {
+  height: 0.3rem;
+}
+.movies-type-container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.type-title {
+  color: #734b6d;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .movie-card-container {
+    min-width: 150px;
+  }
+
+  .type-title {
+    font-size: 1.5rem;
+  }
+  .movies-slider-container {
+    padding: 0.5rem 0.5rem;
+  }
+}

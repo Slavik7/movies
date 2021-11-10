@@ -1,0 +1,26 @@
+.filters-container {
+  height: 100vh;
+  font-family: "Sen", sans-serif;
+  padding-left: 1em;
+}
+
+.btn-filter {
+  background: #fff;
+  height: 1.7rem;
+  width: 80%;
+  border: 1px solid #734b6d;
+  margin-left: 0.3rem;
+  margin-bottom: 2rem;
+  font-family: "Sen", sans-serif;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  color: #734b6d;
+  transition: all 0.2s ease;
+}
+
+.btn-filter:hover,
+.btn-filter:active {
+  background: #734b6d;
+  color: #fff;
+  cursor: pointer;
+}

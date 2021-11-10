@@ -1,0 +1,39 @@
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+
+  padding: 0 2rem;
+}
+
+.btn-page {
+  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  padding: 1em;
+  font-weight: 500;
+  color: #734b6d;
+  border: 1.5px solid #734b6d;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2em;
+}
+.btn-page:hover,
+.btn-page:active {
+  background: #734b6d;
+  color: #fff;
+}
+.page-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+
+@media screen and (max-width: 760px) {
+  .movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  }
+}

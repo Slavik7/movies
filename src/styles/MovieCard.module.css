@@ -1,0 +1,62 @@
+.movie-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  animation: popUpAnimation 0.3s;
+}
+
+.movie-card:hover {
+  background-color: #734b6d34;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.image {
+  width: 100%;
+}
+
+.movie-title {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.movie-year {
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+@keyframes popUpAnimation {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  100% {
+    transfom: scale(1);
+    opacity: 1;
+  }
+}
+
+.no-image {
+  color: #8a8a8a;
+  padding-top: 2em;
+
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-image p {
+  color: #8a8a8a;
+}
+
+@media screen and (max-width: 760px) {
+  .no-image {
+    font-size: 2rem;
+  }
+}

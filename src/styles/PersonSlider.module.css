@@ -1,0 +1,53 @@
+.person-slider-container {
+  max-width: 100%;
+  display: flex;
+  padding: 2rem 1rem;
+  margin: 0 2rem 2rem 2rem;
+  position: relative;
+  overflow-x: scroll;
+}
+
+.person-slider-container::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+.person-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  animation: popUpAnimation 0.3s;
+  min-width: 200px;
+  margin: 0 0.5rem;
+}
+.person-card:hover {
+  background-color: #734b6d34;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.profile-pic {
+  width: 100%;
+}
+
+.person-name {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.person-section-title {
+  color: #734b6d;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .person-card {
+    min-width: 150px;
+  }
+}

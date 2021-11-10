@@ -1,0 +1,25 @@
+.year-filter-container {
+  width: 100%;
+}
+.year-filter-title {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #585858;
+}
+
+.selections select {
+  width: 90%;
+  font-size: 1em;
+}
+.selections {
+  display: flex;
+  align-items: center;
+}
+.arrow-icon {
+  margin: 0 5px;
+  font-size: 1.2em;
+}
+
+.arrow-icon:hover {
+  cursor: pointer;
+  color: #734b6d;
+}

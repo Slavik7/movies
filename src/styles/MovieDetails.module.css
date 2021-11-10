@@ -1,0 +1,237 @@
+.movie-details-container {
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  animation: fadeIn 0.5s;
+}
+.genres {
+  display: flex;
+}
+.genres p {
+  margin-right: 0.5em;
+  border-right: 1px solid rgba(189, 186, 186, 0.774);
+  padding-right: 0.5em;
+}
+.cover-image {
+  width: 30%;
+  object-fit: scale-down;
+}
+
+.overview p {
+  max-height: 7rem;
+  overflow-y: scroll;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.movie-details {
+  position: relative;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 70%;
+
+  animation: popUpAnimation 0.5s;
+}
+
+.movie-main-info {
+  display: flex;
+  justify-content: center;
+  flex: 0.8;
+  padding: 1rem 2rem;
+}
+.movie-title {
+  flex: 0.2;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.movie-info {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 1.6rem;
+  padding: 0 2em;
+  font-size: 1.1rem;
+}
+
+.movie-info span {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  color: #734b6d63;
+}
+
+.video-toggle p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+}
+.video-toggle {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+}
+.video-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-play {
+  color: #585858;
+}
+
+.video-toggle:hover,
+.video-toggle:active {
+  transform: scale(1.1);
+}
+
+.video-container {
+  animation: popUpAnimation 0.5s ease;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.credits-container {
+  position: relative;
+}
+.credits {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1.5rem;
+}
+.cast-member {
+  padding-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+.hidden {
+  opacity: 0;
+  animation: fadeOut 0.3s ease;
+}
+
+.close-btn {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-size: 1.8rem;
+  color: #585858;
+  cursor: pointer;
+  padding: 0.2em;
+}
+.btn-more-cast {
+  font-family: "Sen", sans-serif;
+  color: #734b6d;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 10%;
+  font-size: 1rem;
+  padding-right: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@keyframes popUpAnimation {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+
+  100% {
+    transfom: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0.2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .movie-details {
+    width: 90%;
+  }
+  .video-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .movie-details {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .movie-details {
+    width: 100%;
+  }
+  .movie-title {
+    font-size: 1.7rem;
+  }
+  .movie-info {
+    font-size: 0.9rem;
+  }
+  .movie-info span {
+    font-size: 0.9rem;
+  }
+}

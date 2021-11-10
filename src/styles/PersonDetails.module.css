@@ -1,0 +1,61 @@
+.person-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.main-info {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-height: 40vh;
+  width: 100%;
+}
+
+.person-profile-pic {
+  width: 30%;
+  object-fit: scale-down;
+}
+.info {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bio {
+  overflow-y: scroll;
+  width: 90%;
+}
+.main-info span {
+  font-size: 1.1rem;
+  color: #734b6d63;
+  text-decoration: underline;
+  margin: 0.5em 0;
+}
+.main-info p {
+  font-size: 1.1rem;
+}
+.movies-container {
+  margin-top: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
+  display: flex;
+  overflow-x: scroll;
+  width: 90vw;
+}
+
+.movies-container::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+.movie-card-container {
+  width: 10%;
+  min-width: 200px;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+@media screen and (max-width: 760px) {
+  .movie-card-container {
+    min-width: 150px;
+  }
+}

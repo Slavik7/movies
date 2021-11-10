@@ -1,0 +1,17 @@
+.filter-page-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .filter-page-container {
+    grid-template-columns: 15% 85%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .filter-page-container {
+    grid-template-columns: 30% 80%;
+  }
+}
